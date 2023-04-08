@@ -169,12 +169,17 @@
     margin-top: 48px;
 }
 
+
 .marg_bottm_15 {
     margin-bottom: 15px;
 }
 
 .marg_bottm_48 {
     margin-bottom: 48px;
+}
+
+.padding_bottom_12 {
+    padding-bottom: 12px;
 }
 
 .padding_left_10 {
@@ -260,19 +265,18 @@ nav ul li a:hover {
 }
 
 
-.bg-img {
+.bg_img {
     background-image: url(../image/svg/a_man_giving_speach.png);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     min-height: 100vh;
+    width: 100%;
     position: relative;
     z-index: 1;
 
 }
 
-.bg-img::after {
+.bg_img::after {
     content: "";
     position: absolute;
     top: 0;
@@ -333,9 +337,16 @@ nav ul li a:hover {
 
 }
 
-
-
-
+.make_special {
+    max-width: 583px;
+    height: 72px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+}
 
 .paraghraph_fonts {
     font-family: 'Poppins', 'dm sans';
@@ -469,13 +480,17 @@ nav ul li a:hover {
 
 }
 
-.position_relative {
+.box_position_relative {
     position: relative;
+    left: 0;
+    top: 0;
 
 }
 
-.position_absolute {
+.icon_position_absolute {
     position: absolute;
+    left: 10%;
+    top: 0;
 }
 
 .left_10 {
@@ -496,6 +511,10 @@ nav ul li a:hover {
 
 .top_-45 {
     top: -45px;
+}
+
+.transfrom_x_-40 {
+    transform: translateX(-40%);
 }
 
 .transfrom_x_-50 {
@@ -543,11 +562,25 @@ nav ul li a:hover {
 }
 
 .box_2 {
-    /* height: 198px; */
+
     width: 260px;
     border-radius: 5px;
     border: 2px solid blue;
+    color: #2C49FE;
 
+}
+
+.box_2 h6 {
+    color: #2C49FE;
+}
+
+:hover.box_2 h6 {
+    color: white;
+}
+
+.box_2:hover {
+    color: #fff;
+    background-color: #2C49FE;
 }
 
 .lorem_sec_2 {
@@ -555,9 +588,6 @@ nav ul li a:hover {
     font-style: normal;
     font-weight: 400;
     max-width: 220px;
-
-
-
 }
 
 .sec_2_h_6 {
@@ -573,10 +603,6 @@ nav ul li a:hover {
     width: 50%;
 }
 
-.bg_color_blue {
-    background: #2C49FE;
-
-}
 
 .color_blue {
     color: #2C49FE;
@@ -747,17 +773,29 @@ nav ul li a:hover {
     height: 124px;
     width: 574px;
     border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+
 }
 
 .sign_up_col_6 {
     height: 46px;
     width: 574px;
-
     border-radius: 23px;
     padding: 11px 256.5px;
     color: #FFFFFF;
+    cursor: pointer;
+    border: none;
 
 
+}
+
+.bg_color_blue {
+    background-color: #2C49FE;
 }
 
 .date_font {
@@ -819,6 +857,17 @@ nav ul li a:hover {
     font-size: 35px;
     line-height: 52px;
     color: #000000;
+
+}
+
+.sign_up_button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+
 
 }
 
@@ -899,7 +948,6 @@ input[type="checkbox"] {
 
 nav {
     z-index: 2 !important;
-    background-color: #999999;
 }
 
 .display_none {
@@ -917,7 +965,7 @@ nav {
         left: -100%;
         width: 100%;
         height: calc(100vh - 75.5px);
-        background-color: lightblue;
+        background-color: rgb(19, 14, 167);
 
     }
 
@@ -943,8 +991,8 @@ nav {
         left: 0;
     }
 
-    nav h3 {
-        font-size: 16px;
+    section nav h3 {
+       display: none;
     }
 
     h1 {
@@ -956,20 +1004,30 @@ nav {
 
 
 @media (min-width:576px) {
+    .col_sm_12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
     .col_sm_6 {
         width: 50%;
         padding-left: 12px;
         padding-right: 12px;
-        margin-top: 30px;
+
     }
 
     .col_sm_3 {
         width: 25%;
         padding-left: 12px;
         padding-right: 12px;
-        margin-top: 30px;
+
     }
 
+    .margin_sm_top_30 {
+        margin-top: 30px;
+    }
 
 }
 
@@ -985,16 +1043,19 @@ nav {
         width: 33.33%;
         padding-left: 12px;
         padding-right: 12px;
-        margin-top: 30px;
+
     }
 
     .col_md_3 {
         width: 25%;
         padding-left: 12px;
         padding-right: 12px;
-        margin-top: 30px;
+
     }
 
+    .margin_md_top_30 {
+        margin-top: 30px;
+    }
 }
 
 
@@ -1025,7 +1086,6 @@ nav {
         width: 50%;
         padding-left: 12px;
         padding-right: 12px;
-        margin-top: 30px;
 
     }
 
@@ -1043,6 +1103,9 @@ nav {
 
     }
 
+    .margin_xl_top_30 {
+        margin-top: 30px;
 
+    }
 
 }
