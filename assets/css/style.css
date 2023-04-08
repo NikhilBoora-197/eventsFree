@@ -763,7 +763,7 @@ nav ul li a:hover {
 
 .input {
     height: 42px;
-    width: 279px;
+    width: 48%;
     border: solid #999999;
     border-radius: 5px;
 
@@ -773,7 +773,7 @@ nav ul li a:hover {
 .email {
 
     height: 42px;
-    width: 574px;
+    width: 98%;
     left: 1011px;
     top: 3311px;
     border: solid #999999;
@@ -783,7 +783,7 @@ nav ul li a:hover {
 
 .about_me {
     height: 124px;
-    width: 574px;
+    width: 98%;
     border-radius: 5px;
     font-family: 'Poppins';
     font-style: normal;
@@ -796,9 +796,8 @@ nav ul li a:hover {
 
 .sign_up_col_6 {
     height: 46px;
-    width: 574px;
     border-radius: 23px;
-    padding: 11px 256.5px;
+    width: 100%;
     color: #FFFFFF;
     cursor: pointer;
     border: none;
@@ -976,8 +975,10 @@ nav {
         top: 75.5px;
         left: -100%;
         width: 100%;
+        transition: .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         height: calc(100vh - 75.5px);
         background-color: rgb(19, 14, 167);
+
 
     }
 
@@ -986,6 +987,7 @@ nav {
         height: 4px;
         border-radius: 50px;
         background-color: blue;
+
 
     }
 
@@ -1001,6 +1003,8 @@ nav {
 
     #mobileview:checked~ul.navbar {
         left: 0;
+        background-color: rgb(19, 14, 167);
+        backdrop-filter: blur(10px)
     }
 
     section nav h3 {
@@ -1094,8 +1098,22 @@ nav {
 }
 
 @media (min-width:1200px) {
+    .col_xl_7 {
+        width: 58.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
     .col_xl_6 {
         width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
+    .col_xl_5 {
+        width: 41.66%;
         padding-left: 12px;
         padding-right: 12px;
 
@@ -1118,6 +1136,13 @@ nav {
     .margin_xl_top_30 {
         margin-top: 30px;
 
+    }
+
+}
+
+@media (min-width:1260px) {
+    .col-xxl-12 {
+        width: 100%;
     }
 
 }
