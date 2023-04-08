@@ -325,6 +325,9 @@ nav ul li a:hover {
     line-height: 135%;
 }
 
+.w_100 {
+    width: 100%;
+}
 
 .nav_font_poppins {
 
@@ -339,7 +342,6 @@ nav ul li a:hover {
 
 .make_special {
     max-width: 583px;
-    height: 72px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -590,6 +592,14 @@ nav ul li a:hover {
     max-width: 220px;
 }
 
+.fw_400 {
+    font-weight: 400;
+}
+
+.poppins {
+    font-family: 'Poppins';
+}
+
 .sec_2_h_6 {
     font-family: 'Poppins', 'dm sans';
     font-style: normal;
@@ -751,15 +761,16 @@ nav ul li a:hover {
     background-color: #FFFFFF;
 }
 
-.col_6_input {
+.input {
     height: 42px;
     width: 279px;
     border: solid #999999;
     border-radius: 5px;
 
+
 }
 
-.col_6_email {
+.email {
 
     height: 42px;
     width: 574px;
@@ -767,9 +778,10 @@ nav ul li a:hover {
     top: 3311px;
     border: solid #999999;
     border-radius: 5px;
+
 }
 
-.col_6_about_me {
+.about_me {
     height: 124px;
     width: 574px;
     border-radius: 5px;
@@ -992,7 +1004,7 @@ nav {
     }
 
     section nav h3 {
-       display: none;
+        display: none;
     }
 
     h1 {
